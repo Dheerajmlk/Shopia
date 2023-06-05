@@ -75,7 +75,7 @@ export default function Footer() {
                     />
                     <input
                       type="submit"
-                      className="btn btn-sm btn-primary"
+                      className="btn btn-sm btn-primary w-25"
                       value="subscribe"
                     />
                   </div>
