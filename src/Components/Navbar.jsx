@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -21,9 +22,9 @@ export default function Navbar() {
 
                 <div className="col-12 mb-1 mb-md-0 col-md-4 order-1 order-md-2 text-center">
                   <div className="site-logo">
-                    <a href="/" className="js-logo-clone">
+                    <Link to="/" className="js-logo-clone">
                       Shopia
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -31,20 +32,23 @@ export default function Navbar() {
                   <div className="site-top-icons">
                     <ul>
                       <li>
-                        <a href="/profile" >
-                          <span className="icon icon-person"></span>
-                        </a>
+                        <Link to="/profile">
+                          <span className="icon icon-person">Profile</span>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/cart" className="site-cart">
+                        <Link to="/cart" className="site-cart">
                           <span className="icon icon-shopping_cart"></span>
                           <span className="count">2</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="d-inline-block d-md-none ml-md-0">
-                        <a href="#" className="site-menu-toggle js-menu-toggle">
+                        <Link
+                          to="#"
+                          className="site-menu-toggle js-menu-toggle"
+                        >
                           <span className="icon-menu"></span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -59,16 +63,16 @@ export default function Navbar() {
             <div className="container ">
               <ul className="site-menu js-clone-nav d-none d-md-block">
                 <li className=" active ">
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/about">About</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a href="/shop">Shop</a>
+                  <Link to="/shop">Shop</Link>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

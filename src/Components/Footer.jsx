@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <footer className="site-footer border-top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 mb-5 mb-lg-0">
+            <div className="col-lg-6 mb-6 mb-lg-0">
               <div className="row">
                 <div className="col-md-12">
                   <h3 className="footer-heading mb-4">Navigations</h3>
@@ -14,72 +15,49 @@ export default function Footer() {
                 <div className="col-md-6 col-lg-4">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#">Sell online</a>
+                      <Link to="#">Home</Link>
                     </li>
                     <li>
-                      <a href="#">Features</a>
+                      <Link to="#">About</Link>
                     </li>
                     <li>
-                      <a href="#">Shopping cart</a>
+                      <Link to="#">Shop</Link>
                     </li>
                     <li>
-                      <a href="#">Store builder</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="#">Mobile commerce</a>
-                    </li>
-                    <li>
-                      <a href="#">Dropshipping</a>
-                    </li>
-                    <li>
-                      <a href="#">Website development</a>
+                      <Link to="#">Contact</Link>
                     </li>
                   </ul>
                 </div>
                 <div className="col-md-6 col-lg-4">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#">Point of sale</a>
+                      <Link to="/Profile">Profile</Link>
                     </li>
                     <li>
-                      <a href="#">Hardware</a>
+                      <Link to="/Cart">Cart</Link>
                     </li>
                     <li>
-                      <a href="#">Software</a>
+                      <Link to="/Checkout">Checkout</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Logout</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <h3 className="footer-heading mb-4">Promo</h3>
-              <a href="#" className="block-6">
-                <img
-                  src="assets/images/hero_1.jpg"
-                  alt="Image placeholder"
-                  className="img-fluid rounded mb-4"
-                />
-                <h3 className="font-weight-light  mb-0">
-                  Finding Your Perfect Shoes
-                </h3>
-                <p>Promo from nuary 15 &mdash; 25, 2019</p>
-              </a>
-            </div>
-            <div className="col-md-6 col-lg-3">
+           
+            <div className="col-md-6 col-lg-6">
               <div className="block-5 mb-5">
-                <h3 className="footer-heading mb-4">Contact Info</h3>
+                <h3 className="footer-heading mb-4">Contact Information</h3>
                 <ul className="list-unstyled">
                   <li className="address">
-                    203 Fake St. Mountain View, San Francisco, California, USA
+                    Civil Road Shop -46,47 Gohana ,Haryana 131301
                   </li>
                   <li className="phone">
-                    <a href="tel://23923929210">+2 392 3929 210</a>
+                    <Link to="tel://23923929210">+2 392 3929 210</Link>
                   </li>
-                  <li className="email">emailaddress@domain.com</li>
+                  <li className="email">Dheerajmlk123@gmail.com</li>
                 </ul>
               </div>
 
@@ -98,7 +76,7 @@ export default function Footer() {
                     <input
                       type="submit"
                       className="btn btn-sm btn-primary"
-                      value="Send"
+                      value="subscribe"
                     />
                   </div>
                 </form>
