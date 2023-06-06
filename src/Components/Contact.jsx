@@ -20,69 +20,94 @@ export default function Contact() {
             <div className="col-md-12">
               <h2 className="h3 mb-3 text-black">Get In Touch</h2>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-6 ml-auto text-center">
+              <div className="p-4 border mb-3">
+                <span className="d-block text-primary h6 text-uppercase ">
+                  India
+                </span>
+                <p className="mb-0">Sector 7 Gohana ,Sonipat,Haryana</p>
+                <p className="mb-0">70111013**</p>
+                <p className="mb-0">Dheerajmlk123@gmail.com</p>
+                <div className="mapouter">
+                  <div className="gmap_canvas">
+                    <iframe
+                      width="100%"
+                      height="500"
+                      id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=Gohana%20sector%207%20&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                      frameBorder="0"
+                      scrolling="no"
+                      marginHeight="0"
+                      marginWidth="0"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
               <form action="#" method="post">
                 <div className="p-3 p-lg-5 border">
                   <div className="form-group row">
-                    <div className="col-md-6">
-                      <label for="c_fname" className="text-black">
+                    <div className="col-md-12">
+                      <label for="name" className="text-black">
                         First Name <span className="text-danger">*</span>
                       </label>
                       <input
                         type="text"
                         className="form-control"
-                        id="c_fname"
-                        name="c_fname"
-                      />
-                    </div>
-                    <div className="col-md-6">
-                      <label for="c_lname" className="text-black">
-                        Last Name <span className="text-danger">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="c_lname"
-                        name="c_lname"
+                        id="name"
+                        name="name"
                       />
                     </div>
                   </div>
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="c_email" className="text-black">
+                      <label for="email" className="text-black">
                         Email <span className="text-danger">*</span>
                       </label>
                       <input
                         type="email"
                         className="form-control"
-                        id="c_email"
-                        name="c_email"
+                        id="email"
+                        name="email"
+                        placeholder=""
+                      />
+                    </div>
+                    <div className="col-md-12">
+                      <label for="contact" className="text-black">
+                        Contact Number <span className="text-danger">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="contact"
+                        name="contact"
                         placeholder=""
                       />
                     </div>
                   </div>
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="c_subject" className="text-black">
+                      <label for="subject" className="text-black">
                         Subject{" "}
                       </label>
                       <input
                         type="text"
                         className="form-control"
-                        id="c_subject"
-                        name="c_subject"
+                        id="subject"
+                        name="subject"
                       />
                     </div>
                   </div>
 
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="c_message" className="text-black">
+                      <label for="message" className="text-black">
                         Message{" "}
                       </label>
                       <textarea
-                        name="c_message"
-                        id="c_message"
+                        name="message"
+                        id="message"
                         cols="30"
                         rows="7"
                         className="form-control"
@@ -100,32 +125,6 @@ export default function Contact() {
                   </div>
                 </div>
               </form>
-            </div>
-            <div className="col-md-5 ml-auto">
-              <div className="p-4 border mb-3">
-                <span className="d-block text-primary h6 text-uppercase">
-                  New York
-                </span>
-                <p className="mb-0">
-                  203 Fake St. Mountain View, San Francisco, California, USA
-                </p>
-              </div>
-              <div className="p-4 border mb-3">
-                <span className="d-block text-primary h6 text-uppercase">
-                  London
-                </span>
-                <p className="mb-0">
-                  203 Fake St. Mountain View, San Francisco, California, USA
-                </p>
-              </div>
-              <div className="p-4 border mb-3">
-                <span className="d-block text-primary h6 text-uppercase">
-                  Canada
-                </span>
-                <p className="mb-0">
-                  203 Fake St. Mountain View, San Francisco, California, USA
-                </p>
-              </div>
             </div>
           </div>
         </div>
