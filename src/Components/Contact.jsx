@@ -28,11 +28,11 @@ export default function Contact() {
                 <p className="mb-0">Sector 7 Gohana ,Sonipat,Haryana</p>
                 <p className="mb-0">70111013**</p>
                 <p className="mb-0">Dheerajmlk123@gmail.com</p>
-                <div className="mapouter">
+                <div className="mapouter mt-5">
                   <div className="gmap_canvas">
                     <iframe
                       width="100%"
-                      height="500"
+                      height="530"
                       id="gmap_canvas"
                       src="https://maps.google.com/maps?q=Gohana%20sector%207%20&t=k&z=13&ie=UTF8&iwloc=&output=embed"
                       frameBorder="0"
@@ -49,7 +49,7 @@ export default function Contact() {
                 <div className="p-3 p-lg-5 border">
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="name" className="text-black">
+                      <label htmlFor="name" className="text-black">
                         First Name <span className="text-danger">*</span>
                       </label>
                       <input
@@ -74,7 +74,7 @@ export default function Contact() {
                       />
                     </div>
                     <div className="col-md-12">
-                      <label for="contact" className="text-black">
+                      <label htmlFor="contact" className="text-black">
                         Contact Number <span className="text-danger">*</span>
                       </label>
                       <input
@@ -88,7 +88,7 @@ export default function Contact() {
                   </div>
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="subject" className="text-black">
+                      <label htmlFor="subject" className="text-black">
                         Subject{" "}
                       </label>
                       <input
@@ -102,7 +102,7 @@ export default function Contact() {
 
                   <div className="form-group row">
                     <div className="col-md-12">
-                      <label for="message" className="text-black">
+                      <label htmlFor="message" className="text-black">
                         Message{" "}
                       </label>
                       <textarea
