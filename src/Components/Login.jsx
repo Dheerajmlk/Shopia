@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Login() {
-  let [data, setdata] = useState({
-    username: "",
-    password: "",
-  });
-  function getData(e) {
-    var name = e.target.name;
-    var value = e.target.value;
-    setdata((old) => {
-      return {
-        ...old,
-        [name]: value,
-      };
-    });
-  }
-  function postDate(e) {
-    e.preventDefault();
-    alert(`
-        Username : ${data.username}
-        Password : ${data.password}
-        `);
-  }
+
+    let [data, setdata] = useState({
+        username: "",
+        password: "",
+      });
+      function getData(e) {
+        var name = e.target.name;
+        var value = e.target.value;
+        setdata((old) => {
+          return {
+            ...old,
+            [name]: value,
+          };
+        });
+      }
+      function postDate(e) {
+        e.preventDefault();
+        alert(`
+            Username : ${data.username}
+            Password : ${data.password}
+            `);
+      }
+
+
+
+  
   return (
     <>
       <div className="row mt-3">
@@ -41,6 +48,7 @@ export default function Login() {
                     id="username"
                     name="username"
                     onChange={getData}
+                    required
                     placeholder="Enter Your Username"
                   />
                 </div>
@@ -55,6 +63,8 @@ export default function Login() {
                     className="form-control"
                     id="password"
                     name="password"
+                    required
+
                     onChange={getData}
                     placeholder="Password"
                   />
@@ -69,9 +79,19 @@ export default function Login() {
                   />
                 </div>
               </div>
+          <div
+            className="d-flex justify-space-between"
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Link to="#" className="text-decoraction-none">
+              Forget Password
+            </Link>
+            <Link to="/signup" className="text-decoraction-none">
+            New user?Create a account
+            </Link>
+          </div>
             </div>
           </form>
-          
         </div>
         <div className="col-md-2 col-1"></div>
       </div>

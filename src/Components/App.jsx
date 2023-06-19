@@ -7,6 +7,7 @@ import Shop from "./Shop";
 import About from "./About";
 import Contact from "./Contact";
 import Cart from "./Cart";
+import SignUp from "./SignUp";
 import Login from "./Login";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/Contact" element={<Contact />}></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Login" element={<Login />}></Route>
+          <Route path="/SignUp" element={<SignUp />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
