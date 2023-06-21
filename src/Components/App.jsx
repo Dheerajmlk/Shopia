@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Cart from "./Cart";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import Checkout from "./Checkout";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/SignUp" element={<SignUp />}></Route>
+          <Route path="/Checkout" element={<Checkout />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

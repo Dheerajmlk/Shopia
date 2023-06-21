@@ -50,9 +50,8 @@ export default function Navbar() {
                       ) : (
                         <li>
                           <Link to="/login">
-                            <i class="bi bi-box-arrow-in-right">   Login</i>
+                            <i class="bi bi-box-arrow-in-right"> Login</i>
                           </Link>
-                       
                         </li>
                       )}
                       <li className="d-inline-block d-md-none ml-md-0">
@@ -89,6 +88,9 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/Admin">Admin</Link>
                 </li>
               </ul>
             </div>
