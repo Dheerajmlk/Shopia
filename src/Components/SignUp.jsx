@@ -38,7 +38,7 @@ export default function SignUp() {
   }
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <h5 className="text-center">Signup page</h5>
         <form onSubmit={postDate}>
           <div className="p-3 p-lg-5 border">
@@ -153,6 +153,146 @@ export default function SignUp() {
             </div>
           </div>
         </form>
+      </div> */}
+      <div style={{width:"100vw"}}>
+
+    
+      <div className="register-box" style={{margin:"auto"}}>
+
+        <div className="card">
+          <div className="card-body register-card-body">
+            <p className="login-box-msg">Create a free account</p>
+
+            <form onSubmit={postDate}>
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Full name"
+                  onChange={getData}
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Username"
+                  name="username"
+                  onChange={getData}
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="input-group mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  onChange={getData}
+                  className="form-control"
+                  placeholder="Email"
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  name="phone"
+                  onChange={getData}
+                  className="form-control"
+                  placeholder="Phone no."
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="input-group mb-3">
+                <input
+                  type="password"
+                  name="password"
+                  onChange={getData}
+                  className="form-control"
+                  placeholder="Password"
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="input-group mb-3">
+                <input
+                  type="password"
+                  name="cpassword"
+                  onChange={getData}
+                  className="form-control"
+                  placeholder="Retype password"
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-6">
+                  <div className="icheck-primary">
+                    <input
+                      type="checkbox"
+                      id="agreeTerms"
+                      name="terms"
+                      value="agree"
+                    />
+                    <label for="agreeTerms">
+                      I agree to the <a href="#">terms</a>
+                    </label>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <button type="submit" className="btn btn-primary btn-block">
+                    Create
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div className="social-auth-links text-center">
+              <p>- OR -</p>
+              <a href="#" className="btn btn-block btn-primary btn-sm">
+                <i className="fab fa-facebook mr-2"></i>
+                Sign up using Facebook
+              </a>
+              <a href="#" className="btn btn-block btn-danger">
+                <i className="fab fa-google-plus mr-2"></i>
+                Sign up using Google+
+              </a>
+            </div>
+
+            <Link to="/login" className="text-center">
+              I already have an account
+            </Link>
+          </div>
+        </div>
+      </div>
       </div>
     </>
   );

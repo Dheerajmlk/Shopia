@@ -50,7 +50,7 @@ export default function Navbar() {
                       ) : (
                         <li>
                           <Link to="/login">
-                            <i class="bi bi-box-arrow-in-right"> Login</i>
+                            <i className="bi bi-box-arrow-in-right"> Login</i>
                           </Link>
                         </li>
                       )}

@@ -10,6 +10,7 @@ import Cart from "./Cart";
 import SignUp from "./SignUp";
 import Login from "./Login";
 import Checkout from "./Checkout";
+import AdminHome from "./Admin/AdminHome";
 
 export default function App() {
   return (
@@ -25,6 +26,10 @@ export default function App() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/SignUp" element={<SignUp />}></Route>
           <Route path="/Checkout" element={<Checkout />}></Route>
+
+
+          <Route path="/Admin" element={<AdminHome />}></Route>
+
         </Routes>
         <Footer />
       </BrowserRouter>

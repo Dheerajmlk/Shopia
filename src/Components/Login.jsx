@@ -97,18 +97,19 @@ export default function Login() {
 
             <div className="card">
               <div className="card-body login-card-body">
-                <p className="login-box-msg">Sign in to start your session</p>
+                <p className="login-box-msg">Login To Your Account</p>
 
-                <form action="../../index3.html" method="post">
+                <form onSubmit={postDate}>
                   <div className="input-group mb-3">
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      placeholder="Email"
+                      onChange={getData}
+                      placeholder="Username"
                     />
                     <div className="input-group-append">
                       <div className="input-group-text">
-                        <span className="fas fa-envelope"></span>
+                        <span className="fas fa-user"></span>
                       </div>
                     </div>
                   </div>
@@ -116,6 +117,8 @@ export default function Login() {
                     <input
                       type="password"
                       className="form-control"
+                      name="password"
+                      onChange={getData}
                       placeholder="Password"
                     />
                     <div className="input-group-append">
@@ -137,7 +140,7 @@ export default function Login() {
                         type="submit"
                         className="btn btn-primary btn-block fs-1"
                       >
-                        Sign In
+                      LogIn
                       </button>
                     </div>
                   </div>
@@ -159,9 +162,9 @@ export default function Login() {
                   <a href="forgot-password.html">I forgot my password</a>
                 </p>
                 <p className="mb-0">
-                  <a href="register.html" className="text-center">
-                    Register a new membership
-                  </a>
+                  <Link to="/signup" className="text-center">
+                    New User? create a free account
+                  </Link>
                 </p>
               </div>
             </div>
