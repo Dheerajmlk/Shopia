@@ -92,84 +92,88 @@ export default function Login() {
         <div className="col-md-2 col-1"></div>
       </div> */}
 
-      <div style={{width:"100vw"}}>
-          <div className="login-box" style={{margin:"auto"}}>
 
-            <div className="card">
-              <div className="card-body login-card-body">
-                <p className="login-box-msg">Login To Your Account</p>
+      <div className="login-box" style={{ width: "50vw", margin: "auto" }}>
 
-                <form onSubmit={postDate}>
-                  <div className="input-group mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      onChange={getData}
-                      placeholder="Username"
-                    />
-                    <div className="input-group-append">
-                      <div className="input-group-text">
-                        <span className="fas fa-user"></span>
-                      </div>
-                    </div>
+        <div className="card">
+          <div className="card-body login-card-body">
+            <p className="login-box-msg">Login To Your Account</p>
+
+            <form onSubmit={postDate}>
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  onChange={getData}
+                  placeholder="Username"
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span class="material-symbols-outlined">
+                      person
+                    </span>
                   </div>
-                  <div className="input-group mb-3">
-                    <input
-                      type="password"
-                      className="form-control"
-                      name="password"
-                      onChange={getData}
-                      placeholder="Password"
-                    />
-                    <div className="input-group-append">
-                      <div className="input-group-text">
-                        <span className="fas fa-lock"></span>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="input-group mb-3">
+                <input
+                  type="password"
+                  className="form-control"
+                  name="password"
+                  onChange={getData}
+                  placeholder="Password"
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                  <span class="material-symbols-outlined">
+                      lock
+                    </span>
                   </div>
-                  <div className="row">
-                    <div className="col-6">
-                      <div className="icheck-primary">
-                        <input type="checkbox" id="remember" />
-                        <label for="remember">Remember Me</label>
-                      </div>
-                    </div>
-
-                    <div className="col-6">
-                      <button
-                        type="submit"
-                        className="btn btn-primary btn-block fs-1"
-                      >
-                      LogIn
-                      </button>
-                    </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-6">
+                  <div className="icheck-primary">
+                    <input type="checkbox" id="remember" />
+                    <label for="remember">Remember Me</label>
                   </div>
-                </form>
-
-                <div className="social-auth-links text-center mb-3">
-                  <p>- OR -</p>
-                  <a href="#" className="btn btn-block btn-primary btn-sm">
-                    <i className="fab fa-facebook mr-2"></i> Sign in using
-                    Facebook
-                  </a>
-                  <a href="#" className="btn btn-block btn-danger">
-                    <i className="fab fa-google-plus mr-2"></i> Sign in using
-                    Google+
-                  </a>
                 </div>
 
-                <p className="mb-1">
-                  <a href="forgot-password.html">I forgot my password</a>
-                </p>
-                <p className="mb-0">
-                  <Link to="/signup" className="text-center">
-                    New User? create a free account
-                  </Link>
-                </p>
+                <div className="col-6">
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-block fs-1"
+                  >
+                    LogIn
+                  </button>
+                </div>
               </div>
+            </form>
+
+            <div className="social-auth-links text-center mb-3">
+              <p>- OR -</p>
+              <a href="#" className="btn btn-block btn-primary btn-sm">
+                <i className="fab fa-facebook mr-2"></i> Sign in using
+                Facebook
+              </a>
+              <a href="#" className="btn btn-block btn-danger">
+                <i className="fab fa-google-plus mr-2"></i> Sign in using
+                Google+
+              </a>
             </div>
+
+            <p className="mb-1">
+              <a href="forgot-password.html">I forgot my password</a>
+            </p>
+            <p className="mb-0">
+              <Link to="/signup" className="text-center">
+                New User? create a free account
+              </Link>
+            </p>
           </div>
-          </div>
+        </div>
+      </div>
+
     </>
   );
 }
