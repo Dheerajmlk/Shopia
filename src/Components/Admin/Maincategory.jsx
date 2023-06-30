@@ -1,6 +1,9 @@
 import React from 'react'
 import LeftNav from './LeftNav.jsx'
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { Link } from 'react-router-dom';
+
+
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 70 },
   { field: 'firstName', headerName: 'First name', width: 130 },
@@ -34,7 +37,7 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function maincategory() {
+export default function Maincategory() {
   return (
     <>
       <div className="row">
@@ -42,7 +45,7 @@ export default function maincategory() {
           <LeftNav />
         </div>
         <div className="col-md-9 col-12">
-          <h5 className='text-center p-3'>Maincategory</h5>
+          <h5 className='text-center p-3'>Maincategory <Link to="/admin-add-maincategory"><span class="material-symbols-outlined float-right">add</span></Link></h5>
           <div style={{ height: 400, width: '100%' }}>
             <DataGrid
               rows={rows}

@@ -12,6 +12,7 @@ import Login from "./Login";
 import Checkout from "./Checkout";
 import AdminHome from "./Admin/Adminhome";
 import Maincategory from "./Admin/Maincategory";
+import AddMaincategory from "./Admin/AddMaincategory";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
 
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin-maincategory" element={<Maincategory />}></Route>
+          <Route path="/admin-add-maincategory" element={<AddMaincategory />}></Route>
 
         </Routes>
         <Footer />
