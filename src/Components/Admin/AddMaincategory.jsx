@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import LeftNav from './LeftNav.jsx'
 import { Link } from 'react-router-dom'
-
+import {addMaincategory} from "../../Store/ActionCreators/MaincategoryActionCreators.js"
+import { useDispatch } from 'react-redux'
 
 export default function AddMaincategory() {
     var [name, setname] = useState("")
+    const dispatch = useDispatch()
+
     function getdata(e) {
         setname(e.target.value)
     }
     async function postData(e) {
         e.preventDefault()
-        alert("Name" + name)
+        dispatch.addMaincategory()
+        
     }
     return (
         <>
